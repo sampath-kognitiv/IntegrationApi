@@ -7,7 +7,7 @@
     <payloadFactory media-type="json">
         <format>
         	{
-	            "source": "ESB",
+	            "source": "EI",
 			    "person": {
 			        "firstName": "$1",
 			        "lastName": "$2",
