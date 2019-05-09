@@ -1,1 +1,1 @@
-# IntegrationApi (API Orchestration )
+# IntegrationApi (Middleware for API Orchestration )
