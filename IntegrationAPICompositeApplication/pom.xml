@@ -9,13 +9,90 @@
   <name>IntegrationAPICompositeApplication</name>
   <description>IntegrationAPICompositeApplication</description>
   <properties>
+    <com.noetic.NoeticESB.sequence_._seq_in_hotel_availability>capp/EnterpriseServiceBus</com.noetic.NoeticESB.sequence_._seq_in_hotel_availability>
+    <com.noetic.NoeticESB.sequence_._seq_imperial_auth>capp/EnterpriseServiceBus</com.noetic.NoeticESB.sequence_._seq_imperial_auth>
+    <com.noetic.NoeticESB.sequence_._seq_common>capp/EnterpriseServiceBus</com.noetic.NoeticESB.sequence_._seq_common>
     <com.noetic.NoeticESB.api_._ESBApi>capp/EnterpriseServiceBus</com.noetic.NoeticESB.api_._ESBApi>
     <artifact.types>jaggery/app=zip,synapse/priority-executor=xml,synapse/inbound-endpoint=xml,service/rule=aar,synapse/message-store=xml,event/stream=json,service/meta=xml,datasource/datasource=xml,synapse/proxy-service=xml,bpel/workflow=zip,synapse/sequence=xml,synapse/endpointTemplate=xml,carbon/application=car,wso2/gadget=dar,synapse/api=xml,synapse/event-source=xml,synapse/message-processors=xml,event/receiver=xml,lib/dataservice/validator=jar,synapse/template=xml,synapse/endpoint=xml,lib/carbon/ui=jar,lib/synapse/mediator=jar,event/publisher=xml,synapse/local-entry=xml,synapse/task=xml,webapp/jaxws=war,registry/resource=zip,synapse/configuration=xml,service/axis2=aar,synapse/lib=zip,synapse/sequenceTemplate=xml,event/execution-plan=siddhiql,service/dataservice=dbs,web/application=war,lib/library/bundle=jar</artifact.types>
+    <com.noetic.NoeticESB.sequence_._seq_out_hotel_availability>capp/EnterpriseServiceBus</com.noetic.NoeticESB.sequence_._seq_out_hotel_availability>
+    <com.noetic.NoeticESB.sequence_._seq_in_login>capp/EnterpriseServiceBus</com.noetic.NoeticESB.sequence_._seq_in_login>
+    <com.noetic.NoeticESB.sequence_._seq_in_register>capp/EnterpriseServiceBus</com.noetic.NoeticESB.sequence_._seq_in_register>
+    <com.noetic.NoeticESB.sequence_._seq_out_login>capp/EnterpriseServiceBus</com.noetic.NoeticESB.sequence_._seq_out_login>
+    <com.noetic.NoeticESB.sequence_._seq_in_room_availability>capp/EnterpriseServiceBus</com.noetic.NoeticESB.sequence_._seq_in_room_availability>
+    <com.noetic.NoeticESB.sequence_._seq_fault_type_1>capp/EnterpriseServiceBus</com.noetic.NoeticESB.sequence_._seq_fault_type_1>
+    <com.noetic.NoeticESB.sequence_._seq_profile_api_auth>capp/EnterpriseServiceBus</com.noetic.NoeticESB.sequence_._seq_profile_api_auth>
+    <com.noetic.NoeticESB.sequence_._seq_out_register>capp/EnterpriseServiceBus</com.noetic.NoeticESB.sequence_._seq_out_register>
   </properties>
   <dependencies>
     <dependency>
       <groupId>com.noetic.NoeticESB.api</groupId>
       <artifactId>ESBApi</artifactId>
+      <version>1.0.0</version>
+      <type>xml</type>
+    </dependency>
+    <dependency>
+      <groupId>com.noetic.NoeticESB.sequence</groupId>
+      <artifactId>seq_in_login</artifactId>
+      <version>1.0.0</version>
+      <type>xml</type>
+    </dependency>
+    <dependency>
+      <groupId>com.noetic.NoeticESB.sequence</groupId>
+      <artifactId>seq_out_hotel_availability</artifactId>
+      <version>1.0.0</version>
+      <type>xml</type>
+    </dependency>
+    <dependency>
+      <groupId>com.noetic.NoeticESB.sequence</groupId>
+      <artifactId>seq_imperial_auth</artifactId>
+      <version>1.0.0</version>
+      <type>xml</type>
+    </dependency>
+    <dependency>
+      <groupId>com.noetic.NoeticESB.sequence</groupId>
+      <artifactId>seq_in_hotel_availability</artifactId>
+      <version>1.0.0</version>
+      <type>xml</type>
+    </dependency>
+    <dependency>
+      <groupId>com.noetic.NoeticESB.sequence</groupId>
+      <artifactId>seq_in_register</artifactId>
+      <version>1.0.0</version>
+      <type>xml</type>
+    </dependency>
+    <dependency>
+      <groupId>com.noetic.NoeticESB.sequence</groupId>
+      <artifactId>seq_profile_api_auth</artifactId>
+      <version>1.0.0</version>
+      <type>xml</type>
+    </dependency>
+    <dependency>
+      <groupId>com.noetic.NoeticESB.sequence</groupId>
+      <artifactId>seq_in_room_availability</artifactId>
+      <version>1.0.0</version>
+      <type>xml</type>
+    </dependency>
+    <dependency>
+      <groupId>com.noetic.NoeticESB.sequence</groupId>
+      <artifactId>seq_fault_type_1</artifactId>
+      <version>1.0.0</version>
+      <type>xml</type>
+    </dependency>
+    <dependency>
+      <groupId>com.noetic.NoeticESB.sequence</groupId>
+      <artifactId>seq_out_register</artifactId>
+      <version>1.0.0</version>
+      <type>xml</type>
+    </dependency>
+    <dependency>
+      <groupId>com.noetic.NoeticESB.sequence</groupId>
+      <artifactId>seq_common</artifactId>
+      <version>1.0.0</version>
+      <type>xml</type>
+    </dependency>
+    <dependency>
+      <groupId>com.noetic.NoeticESB.sequence</groupId>
+      <artifactId>seq_out_login</artifactId>
       <version>1.0.0</version>
       <type>xml</type>
     </dependency>
