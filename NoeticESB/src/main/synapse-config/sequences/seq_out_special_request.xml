@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sequence name="seq_out_special_request" trace="disable" xmlns="http://ws.apache.org/ns/synapse">
+    <property expression="json-eval($.)" name="Res-payload" scope="default" type="STRING"/>
+    <log level="custom">
+        <property expression="get-property('Res-payload')" name="Response"/>
+    </log>
+    <payloadFactory media-type="json">
+        <format>
+        	{
+	            "code": "$1",
+			    "message": "$2"
+			}
+		</format>
+        <args>
+            <arg evaluator="json" expression="$.code"/>
+            <arg evaluator="json" expression="$.message"/>
+        </args>
+    </payloadFactory>
+    <send/>
+</sequence>
