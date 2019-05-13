@@ -35,4 +35,10 @@
     <artifact name="seq_profile_api_auth" groupId="com.noetic.NoeticESB.sequence" version="1.0.0" type="synapse/sequence" serverRole="EnterpriseServiceBus">
         <file>src/main/synapse-config/sequences/seq_profile_api_auth.xml</file>
     </artifact>
+    <artifact name="seq_in_special_request" groupId="com.noetic.NoeticESB.sequence" version="1.0.0" type="synapse/sequence" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/sequences/seq_in_special_request.xml</file>
+    </artifact>
+     <artifact name="seq_out_special_request" groupId="com.noetic.NoeticESB.sequence" version="1.0.0" type="synapse/sequence" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/sequences/seq_out_special_request.xml</file>
+    </artifact>
 </artifacts>

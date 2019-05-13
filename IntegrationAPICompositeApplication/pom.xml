@@ -17,10 +17,12 @@
     <com.noetic.NoeticESB.sequence_._seq_out_hotel_availability>capp/EnterpriseServiceBus</com.noetic.NoeticESB.sequence_._seq_out_hotel_availability>
     <com.noetic.NoeticESB.sequence_._seq_in_login>capp/EnterpriseServiceBus</com.noetic.NoeticESB.sequence_._seq_in_login>
     <com.noetic.NoeticESB.sequence_._seq_in_register>capp/EnterpriseServiceBus</com.noetic.NoeticESB.sequence_._seq_in_register>
+    <com.noetic.NoeticESB.sequence_._seq_in_special_request>capp/EnterpriseServiceBus</com.noetic.NoeticESB.sequence_._seq_in_special_request>
     <com.noetic.NoeticESB.sequence_._seq_out_login>capp/EnterpriseServiceBus</com.noetic.NoeticESB.sequence_._seq_out_login>
     <com.noetic.NoeticESB.sequence_._seq_in_room_availability>capp/EnterpriseServiceBus</com.noetic.NoeticESB.sequence_._seq_in_room_availability>
     <com.noetic.NoeticESB.sequence_._seq_fault_type_1>capp/EnterpriseServiceBus</com.noetic.NoeticESB.sequence_._seq_fault_type_1>
     <com.noetic.NoeticESB.sequence_._seq_profile_api_auth>capp/EnterpriseServiceBus</com.noetic.NoeticESB.sequence_._seq_profile_api_auth>
+    <com.noetic.NoeticESB.sequence_._seq_out_special_request>capp/EnterpriseServiceBus</com.noetic.NoeticESB.sequence_._seq_out_special_request>
     <com.noetic.NoeticESB.sequence_._seq_out_register>capp/EnterpriseServiceBus</com.noetic.NoeticESB.sequence_._seq_out_register>
   </properties>
   <dependencies>
@@ -93,6 +95,18 @@
     <dependency>
       <groupId>com.noetic.NoeticESB.sequence</groupId>
       <artifactId>seq_out_login</artifactId>
+      <version>1.0.0</version>
+      <type>xml</type>
+    </dependency>
+    <dependency>
+      <groupId>com.noetic.NoeticESB.sequence</groupId>
+      <artifactId>seq_in_special_request</artifactId>
+      <version>1.0.0</version>
+      <type>xml</type>
+    </dependency>
+    <dependency>
+      <groupId>com.noetic.NoeticESB.sequence</groupId>
+      <artifactId>seq_out_special_request</artifactId>
       <version>1.0.0</version>
       <type>xml</type>
     </dependency>
